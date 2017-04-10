@@ -4,8 +4,10 @@ This small repository is an extension of TCLAP for supporting `std::tuple` with 
 a template specialization for:
 
 ```cpp
-template<class... Args>
-class ValueArg<std::tuple<Args...>>;
+namespace TCLAP {
+    template<class... Args>
+    class ValueArg<std::tuple<Args...>>;
+}
 ```
 
 To use this extension, simply include the `tclapt.h` file in your source:
