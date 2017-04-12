@@ -30,3 +30,9 @@ int main(int argc, char *argv[]) {
     std::cout << "Found: " << std::get<0>(itv) << "< " << std::get<1>(itv) << '\n';
 }
 ```
+
+You can then run command like this:
+
+```
+./exec -i 0 20
+```
