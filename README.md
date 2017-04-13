@@ -27,12 +27,13 @@ int main(int argc, char *argv[]) {
     
     auto itv = itvArg.getValue();
     
-    std::cout << "Found: " << std::get<0>(itv) << "< " << std::get<1>(itv) << '\n';
+    std::cout << "Found: " << std::get<0>(itv) << ' ' << std::get<1>(itv) << '\n';
 }
 ```
 
 You can then run command like this:
 
 ```
-./exec -i 0 20
+$ ./exec -i 0 20
+Found: 0 20
 ```
